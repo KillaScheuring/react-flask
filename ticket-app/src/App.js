@@ -282,7 +282,7 @@ class CreateTicket extends React.Component {
                             <input name='ticket_id' id='ticket_id' defaultValue={Math.floor(Math.random()*10000)}/>
                         </td>
                         <td>
-                            <input name='ticket_type' id='ticket_type' defaultValue={0}/>
+                            <input name='ticket_type' id='ticket_type' defaultValue={2}/>
                         </td>
                         <td>
                             <input name='ticket_description' id='ticket_description' defaultValue='New ticket'/>

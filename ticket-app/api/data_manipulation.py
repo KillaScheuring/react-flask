@@ -63,24 +63,18 @@ def update_ticket(ticket_id, new_data):
     with open(tickets_file_location, 'r') as f:
         tickets = json.load(f)
 
-    # Check if any of the data is being updated
-    if tickets[ticket_id]["type"] != int(ticket_type_id)\
-            or tickets[ticket_id]["updated_by"] != int(ticket_updated_by_id)\
-            or tickets[ticket_id]["description"] != ticket_description\
-            or tickets[ticket_id]["due_date"] != ticket_due_date:
+    # If so, update the data
+    if ticket_type_id:
+        tickets[ticket_id]["type"] = int(ticket_type_id)
+    if ticket_updated_by_id:
+        tickets[ticket_id]["updated_by"] = int(ticket_updated_by_id)
+    if ticket_description:
+        tickets[ticket_id]["description"] = ticket_description
+    if ticket_due_date:
+        tickets[ticket_id]["due_date"] = ticket_due_date
 
-        # If so, update the data
-        if ticket_type_id:
-            tickets[ticket_id]["type"] = int(ticket_type_id)
-        if ticket_updated_by_id:
-            tickets[ticket_id]["updated_by"] = int(ticket_updated_by_id)
-        if ticket_description:
-            tickets[ticket_id]["description"] = ticket_description
-        if ticket_due_date:
-            tickets[ticket_id]["due_date"] = ticket_due_date
-
-        # Set updated_at to current time
-        tickets[ticket_id]["updated_at"] = time.time()
+    # Set updated_at to current time
+    tickets[ticket_id]["updated_at"] = time.time()
 
     # Rewrite the JSON
     with open(tickets_file_location, 'w') as f:
