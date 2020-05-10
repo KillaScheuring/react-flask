@@ -1,0 +1,18 @@
+{
+  "1": {
+    "description": "Resolved",
+    "active": false
+  },
+  "2": {
+    "description": "New",
+    "active": true
+  },
+  "3":{
+    "description": "On Going",
+    "active": true
+  },
+  "4":{
+    "description": "Archived",
+    "active": false
+  }
+}

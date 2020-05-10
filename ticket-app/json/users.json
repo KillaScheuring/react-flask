@@ -1,0 +1,38 @@
+{
+  "515151": {
+    "name": "Louise Lane",
+    "position": "Reporter",
+    "department": "Publication",
+    "active": true
+  },
+  "204204": {
+    "name": "Clark Kent",
+    "position": "Reporter",
+    "department": "Publication",
+    "active": true
+  },
+  "783902": {
+    "name": "Barry Alan",
+    "position": "Police Scientist",
+    "department": "CSI",
+    "active": false
+  },
+  "111111": {
+    "name": "Bruce Wayne",
+    "position": "Sponsor",
+    "department": "Billionaire",
+    "active": true
+  },
+  "676767": {
+    "name": "Arthur Dent",
+    "position": "British Man",
+    "department": "Earth",
+    "active": false
+  },
+  "767676": {
+    "name": "Ford Prefect",
+    "position": "Hitch-hiker",
+    "department": "Earth",
+    "active": false
+  }
+}
